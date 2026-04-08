@@ -1,3 +1,7 @@
+import java.text.SimpleDateFormat
+
+def TODAY = (new SimpleDateFormat("yyyyMMdd")).format(new Date())
+
 pipeline {
     agent any
 
