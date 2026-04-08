@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     environment {
-        strDockerImage = "ysh810/cicd-test:0.1"
+        strDockerImage = "${Today}_${BUILD_ID}"
+        strDockerImage = "ysh810/cicd-test:${strDockerTag}"
     }
 
     stages {
