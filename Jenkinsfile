@@ -6,7 +6,7 @@ pipeline {
     agent any
 
     environment {
-        strDockerImage = "${Today}_${BUILD_ID}"
+        strDockerTag = "${TODAY}_${BUILD_ID}"
         strDockerImage = "ysh810/cicd-test:${strDockerTag}"
     }
 
